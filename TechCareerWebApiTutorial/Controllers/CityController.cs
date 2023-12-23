@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TechCareerWebApiTutorial.Models;
 
 namespace TechCareerWebApiTutorial.Controllers
 {
@@ -9,6 +10,10 @@ namespace TechCareerWebApiTutorial.Controllers
         [HttpGet]
         public string[] Get()
         {
+            //instance of WebUser class
+            //var webUser = new WebUser("cagatay@mail.com");    
+
+
             string[] cities = new string[] { "Istanbul", "Ankara", "Izmir", "Bursa", "Antalya" };
             return cities;
         }
