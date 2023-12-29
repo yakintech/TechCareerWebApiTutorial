@@ -12,6 +12,9 @@ namespace TechCareerWebApiTutorial.Models.ORM
         }
 
         public DbSet<Blog> Blogs { get; set; }
+        public DbSet<BlogCategory> BlogCategories { get; set; }
         public DbSet<Author> Authors { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Course> Courses { get; set; }
     }
 }

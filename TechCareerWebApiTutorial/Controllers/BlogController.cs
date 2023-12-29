@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TechCareerWebApiTutorial.Models.ORM;
 
 namespace TechCareerWebApiTutorial.Controllers
@@ -18,7 +19,7 @@ namespace TechCareerWebApiTutorial.Controllers
         public IActionResult Get()
         {
             //databasedeki blogları getir
-            var blogs = _context.Blogs.ToList();
+            var blogs = _context.Blogs.Include(x => x.BlogCategory).ToList();
             return Ok(blogs);
         }
 
