@@ -16,5 +16,6 @@ namespace TechCareerWebApiTutorial.Models.ORM
         public DbSet<Author> Authors { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
+        public DbSet<WebUser> WebUsers { get; set; }
     }
 }
